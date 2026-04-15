@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class Car{
+
+public:
+    static int count;
+
+    Car(){
+        count++;
+    }
+};
+
+int Car::count = 0;
+
+int main(){
+
+    Car s1;
+    Car s2;
+    Car s3;
+
+    cout << Car::count;
+
+}
